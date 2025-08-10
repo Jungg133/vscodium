@@ -1,16 +1,35 @@
-vscode*
-VS*/*
-VSCode*
-VSCodium*
+# Twine Game .gitignore
+
+# OS generated files
 .DS_Store
-*.env
-assets/
-build/linux/appimage/out
-build/linux/appimage/pkg2appimage.AppDir
-build/linux/appimage/pkg2appimage-*.AppImage
-build/linux/appimage/squashfs-root
-build/linux/appimage/VSCodium
-build/windows/msi/releasedir
-build/windows/msi/Files*.wxs
-build/windows/msi/Files*.wixobj
-remote-dependencies.tar
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Temporary files
+*.tmp
+*.temp
+*.log
+
+# Backup files
+*.bak
+*.backup
+
+# If you have any build artifacts or temporary files
+build/
+dist/
+node_modules/
+
+# Keep your game files but ignore any temporary Twine files
+*.tw2
+*.tws
